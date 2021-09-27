@@ -1,0 +1,781 @@
+
+/* Configurações gerais */
+
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animations */
+
+@keyframes slidein {
+    from {
+      margin-bottom: 100%;
+      height: 0%;
+    }
+  
+    to {
+      margin-bottom: 0%;
+      height: 100%;
+      
+    }
+  }
+
+ /* @keyframes moveup{
+    from {
+      margin-bottom: 100%;
+      
+    }
+  
+    to {
+      margin-bottom: 0%;
+      
+    }
+  } */
+
+
+/* Header */
+
+header{
+    height: 100vh;
+    background: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* barra de navegação */
+
+nav{
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3ebeff;
+    z-index: 1;
+}
+
+ .container__logo{
+    margin-left: 2%;
+    
+}
+
+ .nav__items{
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li{
+    margin: 0 25px;
+    padding-top: 15px;
+}
+
+nav li a{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    text-decoration: none;
+    color: #6fcfff;
+}
+
+nav button{
+    font-family: 'Fraunces', serif; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+nav button:hover{
+    color: #ffffff;
+    background: #6fcfff;
+}
+
+/* Botão mobile */
+
+ .mobile__menu{
+    display: none;
+}
+
+ .line1{
+    width: 40px;
+    height: 3px;
+    background: #ffffff;
+    margin-bottom: 7px;
+}
+
+ .line2{
+    width: 40px;
+    height: 3px;
+    background: #ffffff;
+}
+
+ .line3{
+    margin-top: 7px;
+    width: 40px;
+    height: 3px;
+    background: #ffffff;
+}
+
+
+
+
+.header__title{
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.header__title h1{
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-weight: 900; 
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.header__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* animation-duration: 1s;
+    animation-delay: 2s;
+    animation-name: moveup; */
+}
+
+/* Brand */
+
+section{
+    
+}
+
+.section__text{
+    height: 80vh;
+    background: #fefbf8;
+    padding: 10% 9.5% ;
+}
+
+.section__text h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #23303f;
+    margin-bottom: 5%;
+      
+}
+
+.section__text p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600; 
+    font-size: 18px;
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 10%;
+}
+
+.link__yellow{
+    text-decoration: none;
+    padding: -50px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #23303f; 
+    border-bottom: 5px solid #fbf1b8;
+    
+}
+
+.link__yellow:hover{
+    border-bottom: 5px solid #f6d401;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #23303f; 
+}
+
+.link__red{
+    text-decoration: none;
+    padding: -50px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #23303f; 
+    border-bottom: 5px solid #ffdbd4;
+    
+}
+
+.link__red:hover{
+    border-bottom: 5px solid #fc7565;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #23303f; 
+}
+
+
+.brand__img{
+    height: 80vh;
+    background: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.audience__img{
+    height: 80vh;
+    background: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Serviços */
+
+.services{
+
+}
+
+.services__design{
+    height: 80vh;
+    background: url(../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.services__design--text{
+    text-align: center;
+    width: 60%;
+}
+
+.services__design--text h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(167, 40%, 24%);
+    margin-bottom: 10%;
+}
+
+.services__design--text p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(167, 40%, 24%);
+}
+
+.services__photography{
+    height: 80vh;
+    background: url(../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.services__photography--text{
+    text-align: center;
+    width: 55%;
+}
+
+.services__photography--text h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: hsl(198, 62%, 26%);
+    margin-bottom: 10%;
+}
+
+.services__photography--text p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(198, 62%, 26%);
+}
+
+/* Clientes */
+
+.clients{
+    padding: 12% 0;
+    background-color: #fefbf8;
+}
+
+.clients__title h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.clients__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.client__content{
+   text-align: center;
+   width: 350px;
+   margin: 20px;
+}
+
+.client__content img{
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 20%;
+    
+}
+
+.client__content p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20%;
+}
+
+.client__content h4{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 22px;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 5%;
+}
+
+.client__content h5{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: hsl(210, 4%, 67%);
+}
+
+/* Gallery */
+
+.gallery{
+    
+}
+
+.gallery__1{
+    height: 60vh;
+    background: url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.gallery__2{
+    height: 60vh;
+    background: url(../images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.gallery__3{
+    height: 60vh;
+    background: url(../images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.gallery__4{
+    height: 60vh;
+    background: url(../images/desktop//image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Footer */
+
+footer{
+    height: 50vh;
+    background:  #8fd4c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    fill: hsl(168, 34%, 41%);
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li{
+    margin: 25px;
+}
+
+footer ul li a{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: hsl(168, 34%, 41%);
+    text-decoration: none;
+
+}
+
+footer ul li a:hover{
+    color: #fefbf8;
+    text-decoration: none;  
+}
+
+.icons img{
+    margin: 15px;
+}
+
+
+
+
+
+
+/* Media querie*/
+
+@media (max-width: 575.98px) { 
+    
+     .nav__items{
+        display: none;
+    }
+
+     .mobile__menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__items{
+        clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+        background-color: #ffffff;
+        position: absolute;
+        top: 10vh;
+        right: 2%;
+        height: 0vh; /*80vh;*/
+        width: 0vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.5s;
+
+    }
+
+     .nav__items--active{
+        height: 80vh;
+        width: 90vw;
+        transition: all ease-in-out 0.5s;
+        
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav li{
+        margin: 20px;
+        
+    }
+    
+    nav li a{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #7e7c84;
+        text-decoration: none;
+    }
+    
+    nav li a:hover{
+        text-decoration: none;
+        color: #6fcfff;
+    }
+    
+    nav button{
+        font-family: 'Fraunces', serif; 
+        text-transform: uppercase;
+        background-color: #fcd601;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: none;
+    }
+    
+    nav button:hover{
+        color: #ffffff;
+        background: #6fcfff;
+    }
+
+    .header__title h1{
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900; 
+        font-size: 50px;
+        color: #ffffff;
+    }
+    
+    .brand{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .services__design--text{
+        text-align: center;
+        width: 80%;
+    }
+
+    .services__photography--text{
+        text-align: center;
+        width: 80%;
+    }
+
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .nav__items{
+        display: none;
+    }
+
+     .mobile__menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__items{
+        clip-path: polygon(87% 15%, 100% 0, 100% 100%, 0 100%, 0 15%);
+        background-color: #ffffff;
+        position: absolute;
+        top: 10vh;
+        right: 2%;
+        height: 0vh; /*80vh;*/
+        width: 0vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.5s;
+
+    }
+
+     .nav__items--active{
+        height: 80vh;
+        width: 90vw;
+        transition: all ease-in-out 0.5s;
+        
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav li{
+        margin: 20px;
+        
+    }
+    
+    nav li a{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #7e7c84;
+        text-decoration: none;
+    }
+    
+    nav li a:hover{
+        text-decoration: none;
+        color: #6fcfff;
+    }
+    
+    nav button{
+        font-family: 'Fraunces', serif; 
+        text-transform: uppercase;
+        background-color: #fcd601;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: none;
+    }
+    
+    nav button:hover{
+        color: #ffffff;
+        background: #6fcfff;
+    }
+
+    .header__title h1{
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900; 
+        font-size: 60px;
+        color: #ffffff;
+    }
+    
+    .brand{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .services__design--text{
+        text-align: center;
+        width: 80%;
+    }
+
+    .services__photography--text{
+        text-align: center;
+        width: 80%;
+    }
+   
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+   
+
+     .mobile__menu{
+        display: block;
+        cursor: pointer;
+    }
+
+     .nav__items{
+        clip-path: polygon(92% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+        background-color: #ffffff;
+        position: absolute;
+        top: 10vh;
+        right: 2%;
+        height: 0vh; /*80vh;*/
+        width: 0vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all ease-in-out 0.5s;
+
+    }
+
+     .nav__items--active{
+        height: 80vh;
+        width: 90vw;
+        transition: all ease-in-out 0.5s;
+        
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    nav li{
+        margin: 20px;
+        
+    }
+    
+    nav li a{
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #7e7c84;
+        text-decoration: none;
+    }
+    
+    nav li a:hover{
+        text-decoration: none;
+        color: #6fcfff;
+    }
+    
+    nav button{
+        font-family: 'Fraunces', serif; 
+        text-transform: uppercase;
+        background-color: #fcd601;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: none;
+    }
+    
+    nav button:hover{
+        color: #ffffff;
+        background: #6fcfff;
+    }
+
+    .header__title h1{
+        font-family: 'Fraunces', serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900; 
+        font-size: 60px;
+        color: #ffffff;
+    }
+
+    .services__design--text{
+        text-align: center;
+        width: 80%;
+    }
+
+    .services__photography--text{
+        text-align: center;
+        width: 80%;
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+}
+
+
+
+
